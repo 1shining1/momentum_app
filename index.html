@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+
+        <title>Momentum App</title>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="content">
+                <div class="inner">
+                    <h1 id="clock">00:00:00</h1>
+
+                    <form id="login-form" class="form hidden">
+                        <div>
+                            <input
+                                type="text"
+                                placeholder="what is your name?"
+                                required
+                                maxlength="15"
+                            />
+                            <button>Log In</button>
+                            <!-- form 으로 감싸면 유효성검증(validation) 가능 - required, maxlength 등 -->
+                        </div>
+                    </form>
+
+                    <h2 id="greeting" class="hidden">h2</h2>
+                    <form id="todo-form" class="form">
+                        <input
+                            type="text"
+                            placeholder="Write a To Do and Press Enter"
+                            required
+                            name=""
+                        />
+                    </form>
+                    <ul id="todo-list"></ul>
+                </div>
+            </div>
+        </div>
+        <div id="quote">
+            <p class="quote"></p>
+            <p class="author"></p>
+        </div>
+        <div id="weather">
+            <p><span class="status"></span><span class="temp"></span></p>
+            <p></p>
+        </div>
+        <!--wrapper-->
+        <script src="js/apikey.js"></script>
+        <script src="js/greetings.js"></script>
+        <script src="js/clock.js"></script>
+        <script src="js/quotes.js"></script>
+        <script src="js/background.js"></script>
+        <script src="js/todo.js"></script>
+        <script src="js/weather.js"></script>
+    </body>
+</html>
